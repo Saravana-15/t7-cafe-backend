@@ -4,8 +4,8 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-TWILIO_SID = os.getenv("TWILIO_SID")
-TWILIO_AUTH_TOKEN = os.getenv("TWILIO_AUTH_TOKEN")
+TWILIO_SID = "ACb72077cd4f7be33d06272fd6752f116a"   # os.getenv("TWILIO_SID")
+TWILIO_AUTH_TOKEN = "0d47b6b304d7eb73d052afd61a67ef15"  # os.getenv("TWILIO_AUTH_TOKEN")
 TWILIO_WHATSAPP_NUMBER = "whatsapp:+14155238886"  # Twilio sandbox number
 TO_WHATSAPP_NUMBER = "whatsapp:+919655774432"     # Your number
 
