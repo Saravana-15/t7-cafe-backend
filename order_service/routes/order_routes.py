@@ -11,30 +11,24 @@ def save_order():
     print('data', data)
 
     try:
-        # conn = get_db_connection()
-        # cursor = conn.cursor()
-        #
-        # for item in items:
-        #     cursor.execute("""
-        #         INSERT INTO order_details (item_name, qty, price, total)
-        #         VALUES (%s, %s, %s, %s)
-        #     """, (item['name'], item['qty'], item['price'], item['total']))
-        #
-        # conn.commit()
-        # cursor.close()
-        # conn.close()
-
-        # Send WhatsApp message
-        data = request.json
         items = data['items']
         total = data['total_amount']
+        name = data.get('customer_name', 'N/A')
         number = data.get('customer_number', 'N/A')
         location = data.get('customer_location', 'N/A')
 
-        msg = f"📦 New Order from {number}\n📍 Location: {location}\n\n"
+        msg = (
+            f"🧾 *New Order Received!*\n\n"
+            f"👤 Name: {name}\n"
+            f"📱 Number: {number}\n"
+            f"📍 Location: {location}\n\n"
+            f"🛒 *Order Items:*\n"
+        )
+
         for i in items:
-            msg += f"{i['name']} x {i['qty']} = ₹{i['total']}\n"
-        msg += f"\nTotal: ₹{total}"
+            msg += f"• {i['name']} × {i['qty']} = ₹{i['total']}\n"
+
+        msg += f"\n💰 Total: ₹{total}"
 
         send_whatsapp_message(msg)
 
