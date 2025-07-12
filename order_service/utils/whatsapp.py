@@ -13,6 +13,7 @@ def send_whatsapp_message(message):
     try:
         client = Client(TWILIO_SID, TWILIO_AUTH_TOKEN)
         print('msg', message)
+        print('twilio', TWILIO_AUTH_TOKEN, TWILIO_SID, TWILIO_WHATSAPP_NUMBER, TO_WHATSAPP_NUMBER)
         client.messages.create(
             from_=TWILIO_WHATSAPP_NUMBER,
             body=message,
