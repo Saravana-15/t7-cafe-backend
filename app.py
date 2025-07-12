@@ -1,3 +1,5 @@
+import os
+
 from flask import Flask
 from flask_cors import CORS
 
@@ -10,5 +12,8 @@ CORS(app)
 app.register_blueprint(menu_bp, url_prefix="/api/menu")
 app.register_blueprint(order_bp, url_prefix="/api/order")
 
+# if __name__ == "__main__":
+#     app.run(port=5001, debug=True)
 if __name__ == "__main__":
-    app.run(port=5001, debug=True)
+    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
+
