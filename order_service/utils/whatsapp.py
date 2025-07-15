@@ -19,7 +19,6 @@ TO_WHATSAPP_NUMBERS = [
 def send_whatsapp_message(message):
     try:
         client = Client(TWILIO_SID, TWILIO_AUTH_TOKEN)
-        print('Tw', TWILIO_AUTH_TOKEN)
         for number in TO_WHATSAPP_NUMBERS:
             print(f"📨 Sending to: {number}")
             client.messages.create(
