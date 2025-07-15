@@ -48,7 +48,7 @@ def get_menu():
             {"id": 8, "name": "Chicken Nugget (5pcs)", "price": 55, "image_url": "/static/images/chicken-nuggets.jpg"},
             {"id": 9, "name": "Veg Momo (5pcs)", "price": 45, "image_url": "/static/images/veg-momo.jpg"},
             {"id": 10, "name": "Chicken Momo (5pcs)", "price": 55, "image_url": "/static/images/chicken-momo.jpg"},
-            {"id": 11, "name": "Veg Cheese Sandwich", "price": 40, "image_url": "/static/images/veg-cheese-sandwich.jpg"},
+            {"id": 11, "name": "Veg Cheese Sandwich", "price": 40, "image_url": "/static/images/cheese-sandwich.jpg"},
             {"id": 12, "name": "Paneer Sandwich", "price": 50, "image_url": "/static/images/paneer-sandwich.jpg"},
             {"id": 13, "name": "Corn Sandwich", "price": 50, "image_url": "/static/images/corn-sandwich.jpg"},
             {"id": 14, "name": "Bread Omelette", "price": 40, "image_url": "/static/images/bread-omelette.jpg"},
