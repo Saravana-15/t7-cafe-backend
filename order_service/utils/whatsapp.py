@@ -19,6 +19,9 @@ TO_WHATSAPP_NUMBERS = [
 def send_whatsapp_message(message):
     try:
         client = Client(TWILIO_SID, TWILIO_AUTH_TOKEN)
+        print("SID:", TWILIO_SID, flush=True)
+        print("TOKEN:", TWILIO_AUTH_TOKEN, flush=True)
+
         for number in TO_WHATSAPP_NUMBERS:
             print(f"📨 Sending to: {number}")
             client.messages.create(
@@ -26,7 +29,8 @@ def send_whatsapp_message(message):
                 body=message,
                 to=number
             )
-        print("✅ WhatsApp messages sent to all numbers!")
+
+        print("✅ WhatsApp messages sent to all numbers!", flush=True)
 
     except Exception as e:
-        print("❌ Failed to send WhatsApp message:", e)
+        print("❌ Failed to send WhatsApp message:", e, flush=True)
