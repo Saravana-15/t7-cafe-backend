@@ -64,8 +64,8 @@ def get_menu():
             {"id": 22, "name": "Chocolate", "price": 50, "image_url": "/static/images/chocolate.jpg"},
             {"id": 23, "name": "Mango", "price": 50, "image_url": "/static/images/mango.jpg"},
             {"id": 24, "name": "Black Currant", "price": 50, "image_url": "/static/images/blackcurrant.jpg"},
-            {"id": 25, "name": "Kulfi", "price": 40, "image_url": "/static/images/kulfi.jpg"}
-            {"id": 32, "name": "Strawberry-Vanilla mixed", "price": 40, "image_url": "/static/images/strawberry.jpg"},          ],
+            {"id": 25, "name": "Kulfi", "price": 40, "image_url": "/static/images/kulfi.jpg"},
+            {"id": 32, "name": "Strawberry-Vanilla mixed", "price": 40, "image_url": "/static/images/strawberry.jpg"}          ],
           "Desserts": [
             {"id": 26, "name": "Brownie", "price": 45, "image_url": "/static/images/brownie.jpg"},
             {"id": 27, "name": "White Brownie", "price": 50, "image_url": "/static/images/white-brownie.jpg"},
