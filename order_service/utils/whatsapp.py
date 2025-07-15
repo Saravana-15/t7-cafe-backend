@@ -11,7 +11,7 @@ TWILIO_WHATSAPP_NUMBER = "whatsapp:+14155238886"  # Twilio sandbox number
 # ✅ List of recipients (in proper WhatsApp format)
 TO_WHATSAPP_NUMBERS = [
     # "whatsapp:+919361749744",
-    "whatsapp:+917845268331",
+    # "whatsapp:+917845268331",
     "whatsapp:+919655774432",
     # "whatsapp:+917708441990"
 ]
